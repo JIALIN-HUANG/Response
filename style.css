@@ -1,0 +1,58 @@
+.day {
+  position: absolute;
+  left: 22%;
+  top: 55%;
+  font-size: 10rem;
+}
+
+.night {
+  display: white;
+}
+.circle {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  width: 363px;
+  height: 363px;
+  border-radius: 50%;
+
+  background: linear-gradient(180deg, #e8671f 0%, rgba(255, 255, 255, 0) 100%),
+    #dcbd1a;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    background-color: black;
+  }
+
+  .day{
+      display: none;
+  }
+
+  .night {
+    position: absolute;
+    left: 13%;
+    top: 55%;
+    font-size: 5rem;
+    color: white;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .moon {
+    position: absolute;
+    left: 20%;
+  top: 15%;
+    width: 363px;
+    height: 363px;
+    border-radius: 50%;
+    transform: rotate(-180deg);
+
+    background: linear-gradient(180deg, #713817 0%, rgba(111, 110, 110, 0.395833) 99.99%, rgba(24, 24, 24, 0) 100%), #FFFFFF;
+  }
+}
